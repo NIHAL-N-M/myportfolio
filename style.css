@@ -318,6 +318,8 @@ section {
   margin: auto 0;
 }
 
+
+
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -329,31 +331,74 @@ section {
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom : 2rem;
+  text-align: center;
 }
 
 .experience-details-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.details-container {
+  flex: 1;
+  min-width : 350px;
+  border: 2px solid rgba(163, 163, 163, 0.6);
+  border-radius: 2rem;
+  padding: 2.5rem;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.experience-sub-title {
+  text-align: center;
+  margin-bottom : 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
 }
 
 .article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 2rem;
 }
 
 article {
   display: flex;
-  width : 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  align-items: flex-start;
+  gap: 1.2rem;
 }
 
 article .icon {
+  width : 32px;
+  height : 32px;
+  margin-top : 6px;
+}
+
+article h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+article p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+
+article .icon {
+  height : 2rem;
   cursor: default;
 }
 
