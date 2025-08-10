@@ -1,1 +1,1 @@
-web link : https://preeminent-snickerdoodle-200ab1.netlify.app/
+web link : nihalmaganur.netlify.app
