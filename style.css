@@ -265,16 +265,16 @@ section {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
-
 #about {
   position: relative;
+  padding: 4rem 0;
+  height: auto; /* let content decide height */
 }
 
 .about-containers {
   gap: 2rem;
-  margin-bottom : 2rem;
-  margin-top : 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .about-details-container {
@@ -285,20 +285,25 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2rem;
 }
 
 .about-pic {
   border-radius: 2rem;
+  max-width: 100%;
+  height: auto;
 }
 
 .arrow {
   position: absolute;
-  right : -5rem;
-  bottom : 2.5rem;
+  right: -5rem;
+  bottom: 2.5rem;
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding: 1rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
@@ -308,17 +313,17 @@ section {
 }
 
 .section-container {
-  gap: 4rem;
-  height : 80%;
+  display: flex;
+  flex-wrap: wrap; /* ensures items stack on smaller screens */
+  gap: 3rem;
+  height: auto;
 }
 
 .section__pic-container {
-  height : 400px;
-  width : 400px;
+  height: 400px;
+  width: 400px;
   margin: auto 0;
 }
-
-
 
 /* EXPERIENCE SECTION */
 
